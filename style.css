@@ -1,0 +1,46 @@
+.container {
+    background-image: url("https://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2020/02/departments/explore/chasing-storms-supercell-farm-elevator.adapt.1900.1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+   }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#my-map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+}
+h4 {
+
+    text-shadow: aliceblue;
+}
+.card {
+    opacity: .5;
+    margin: 0;
+    padding: 0;
+}
+
+.card-header {
+    font-family: 'Metal Mania', cursive;
+    text-shadow: aqua;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+li {
+    font-family: 'Metal Mania', cursive;
+    text-shadow: aqua;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+.col {
+    margin: 0;
+    padding: 0;
+    
+}

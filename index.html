@@ -3,17 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Weather-Cast-12000</title>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Monoton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
-    
+
 <body>
+  
+  <div class="container img-fluid max-width: 100%;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gray" style ="justify-content: center; background-color: #444444;">
+      <a class="navbar-brand" href="#"style=" font-size: 2rem; font-family: 'Merriweather', serif;
+      font-family: 'Monoton', cursive;" >Weather-Cast-12000</a>
+    </nav>
+    <div class="row full">
+      <div class="col-4">
+        <div class="row px-3">
+          <h3 style ="color: antiquewhite;">Search for a City</h3>
+        </div>
+        <div class="row">
+          <form class="form-inline mb-2 mb-lg-3 mx-3">
+            <input class="form-control mr-sm-2" type="search" placeholder="Seattle, WA" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">zip or city</button>
+          </form>
+        </div>
+        <div class="row">
+          <h3 id="s1"></h3>
+        </div>
+        <div class="row">
+          <h3 id="s2"></h3>
+        </div>
+        <div class="row">
+          <h3 id="s3"></h3>
+        </div>
+        <div class="row">
+          <h3 id="s4"></h3>
+        </div>
+        <div class="row">
+          <h3 id="s5"></h3>
+        </div>
+        <div class="row">
+          <h3 id="s6"></h3>
+        </div>
+        <div class="row">
+          <h id="s7"></h3>
+        </div>
+        <div class="row">
+          <h3 id="s8"></h3>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="row">
+          <div class="col">
+            <h1 style="font-family: 'Metal Mania', cursive;" id="currCity">City</h1><br>
+            <span id="icon"></span>
+            <h4 id="cTemp">Temp</h4><br>
+            <h4 id="cHum">Humidity</h4><br>
+            <h4 id="cWind">Wind Speed</h4><br>
+            <h4 id="cUV">UV Index</h4><br>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg col-md-6 col-12 p-0 m-1">
+            <div class="card">
+              <div id="0card-header" class="card-header">
+                Featured
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="0card-header">Cras justo odio</li>
+                <li class="list-group-item" id="0temp">Dapibus ac facilisis in</li>
+                <li class="list-group-item" id="0hum">Vestibulum at eros</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg col-md-6 col-12 p-0 m-1">
+            <div class="card">
+              <div id="1card-header" class="card-header">
+                Featured
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="0card-header">Cras justo odio</li>
+                <li class="list-group-item" id="1temp">Dapibus ac facilisis in</li>
+                <li class="list-group-item" id="1hum">Vestibulum at eros</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg col-md-6 col-12 p-0 m-1">
+            <div class="card">
+              <div id="2card-header" class="card-header">
+                Featured
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="0card-header">Cras justo odio</li>
+                <li class="list-group-item" id="2temp">Dapibus ac facilisis in</li>
+                <li class="list-group-item" id="2hum">Vestibulum at eros</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg col-md-6 col-12 p-0 m-1">
+            <div class="card">
+              <div id="3card-header" class="card-header">
+                Featured
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="0card-header">Cras justo odio</li>
+                <li class="list-group-item" id="3temp">Dapibus ac facilisis in</li>
+                <li class="list-group-item" id="3hum">Vestibulum at eros</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg col-md-6 col-12 p-0 m-1">
+            <div class="card">
+              <div id="4card-header" class="card-header">
+                Featured
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="0card-header">Cras justo odio</li>
+                <li class="list-group-item" id="4temp">Dapibus ac facilisis in</li>
+                <li class="list-group-item" id="4hum">Vestibulum at eros</li>
+              </ul>
+             
+            </div>
+             <div class="col-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/external.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      
-      
-    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
     <script src="script.js"></script>
