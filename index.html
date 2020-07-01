@@ -17,42 +17,20 @@
       font-family: 'Monoton', cursive;" >Weather-Cast-12000</a>
     </nav>
     <div class="row full">
-      <div class="col-4">
+      <div class="col-12 col-md-4">
         <div class="row px-3">
           <h3 style ="color: antiquewhite;">Search for a City</h3>
         </div>
         <div class="row">
           <form class="form-inline mb-2 mb-lg-3 mx-3">
-            <input class="form-control mr-sm-2" type="search" placeholder="Seattle, WA" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">zip or city</button>
+            <input id = "srch" class="form-control mr-sm-2" type="search" placeholder="Seattle, WA" aria-label="Search">
+            <button id="input" class="btn btn-outline-light my-2 my-sm-0" type="submit">zip or city</button>
           </form>
         </div>
-        <div class="row">
-          <h3 id="s1"></h3>
-        </div>
-        <div class="row">
-          <h3 id="s2"></h3>
-        </div>
-        <div class="row">
-          <h3 id="s3"></h3>
-        </div>
-        <div class="row">
-          <h3 id="s4"></h3>
-        </div>
-        <div class="row">
-          <h3 id="s5"></h3>
-        </div>
-        <div class="row">
-          <h3 id="s6"></h3>
-        </div>
-        <div class="row">
-          <h id="s7"></h3>
-        </div>
-        <div class="row">
-          <h3 id="s8"></h3>
-        </div>
+        <ul class="cityData">
+        </ul>
       </div>
-      <div class="col-8">
+      <div class="col-12 col-md-8">
         <div class="row">
           <div class="col">
             <h1 style="font-family: 'Metal Mania', cursive;" id="currCity">City</h1><br>
@@ -65,63 +43,63 @@
           <div class="col"></div>
         </div>
         <div class="row">
-          <div class="col-lg col-md-6 col-12 p-0 m-1">
+          <div class="col-lg col-md-4 col-6 p-0 m-1">
             <div class="card">
               <div id="0card-header" class="card-header">
                 Featured
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="0card-header">Cras justo odio</li>
-                <li class="list-group-item" id="0temp">Dapibus ac facilisis in</li>
-                <li class="list-group-item" id="0hum">Vestibulum at eros</li>
+                <li class="list-group-item" id="0icon"></li>
+                <li class="list-group-item" id="0temp"></li>
+                <li class="list-group-item" id="0hum"></li>
               </ul>
             </div>
           </div>
-          <div class="col-lg col-md-6 col-12 p-0 m-1">
+          <div class="col-lg col-md-4 col-6 p-0 m-1">
             <div class="card">
               <div id="1card-header" class="card-header">
                 Featured
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="0card-header">Cras justo odio</li>
-                <li class="list-group-item" id="1temp">Dapibus ac facilisis in</li>
-                <li class="list-group-item" id="1hum">Vestibulum at eros</li>
+                <li class="list-group-item" id="1icon"></li>
+                <li class="list-group-item" id="1temp"></li>
+                <li class="list-group-item" id="1hum"></li>
               </ul>
             </div>
           </div>
-          <div class="col-lg col-md-6 col-12 p-0 m-1">
+          <div class="col-lg col-md-4 col-6 p-0 m-1">
             <div class="card">
               <div id="2card-header" class="card-header">
                 Featured
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="0card-header">Cras justo odio</li>
-                <li class="list-group-item" id="2temp">Dapibus ac facilisis in</li>
-                <li class="list-group-item" id="2hum">Vestibulum at eros</li>
+                <li class="list-group-item" id="2icon"></li>
+                <li class="list-group-item" id="2temp"></li>
+                <li class="list-group-item" id="2hum"></li>
               </ul>
             </div>
           </div>
-          <div class="col-lg col-md-6 col-12 p-0 m-1">
+          <div class="col-lg col-md-4 col-6 p-0 m-1">
             <div class="card">
               <div id="3card-header" class="card-header">
                 Featured
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="0card-header">Cras justo odio</li>
-                <li class="list-group-item" id="3temp">Dapibus ac facilisis in</li>
-                <li class="list-group-item" id="3hum">Vestibulum at eros</li>
+                <li class="list-group-item" id="3icon"></li>
+                <li class="list-group-item" id="3temp"></li>
+                <li class="list-group-item" id="3hum"></li>
               </ul>
             </div>
           </div>
-          <div class="col-lg col-md-6 col-12 p-0 m-1">
+          <div class="col-lg col-md-4 col-6 p-0 m-1">
             <div class="card">
               <div id="4card-header" class="card-header">
                 Featured
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="0card-header">Cras justo odio</li>
-                <li class="list-group-item" id="4temp">Dapibus ac facilisis in</li>
-                <li class="list-group-item" id="4hum">Vestibulum at eros</li>
+                <li class="list-group-item" id="4icon"></li>
+                <li class="list-group-item" id="4temp"></li>
+                <li class="list-group-item" id="4hum"></li>
               </ul>
              
             </div>
