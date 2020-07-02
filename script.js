@@ -27,16 +27,7 @@ $(document).ready(function() {
         console.log(userEntry);
         count++;
         localStorage.setItem(("#" + count), userEntry)
-      /*var cityBtn = $("<button>");
-      cityBtn.text(userEntry);
-      cityBtn.attr("class","cityBtn");
-      $("#"+ count + "s").append('<input type="button" id="btn"'+count+' class="btn btn-primary" value="Add Class" />')
-      console.log("#"+ count + "s");
-      cityStorage.unshift(cityBtn)
-      console.log(cityStorage);
-      for (var k = 0; k < cityStorage.length; k++){
-        $("#"+ k + "s").append(cityStorage[k])
-      }*/
+
     
     var now = weather("weather");
     var future = weather("forecast");

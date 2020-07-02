@@ -1,7 +1,6 @@
 @media (min-width:1000px){
     .container {
-        background-image: url("https://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2020/02/departments/explore/chasing-storms-supercell-farm-elevator.adapt.1900.1.jpg");
-        background-size: cover;
+        background-image: url("imgs/storm.jpg");
         width: 100%;
         padding: 2%;
    }
