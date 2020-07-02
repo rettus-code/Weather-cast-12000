@@ -98,7 +98,7 @@ $(document).ready(function() {
   }
   function iconSelector(icon){
     var iconImg = $("<img>");
-    var iconUrl = "http://openweathermap.org/img/wn/";   
+    var iconUrl = "https://openweathermap.org/img/wn/";   
     iconImg.attr("src", iconUrl + icon + "@2x.png");
     return iconImg;
 }
