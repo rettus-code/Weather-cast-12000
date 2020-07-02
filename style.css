@@ -1,9 +1,22 @@
-.container {
-    background-image: url("https://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2020/02/departments/explore/chasing-storms-supercell-farm-elevator.adapt.1900.1.jpg");
-    background-size: cover;
-    width: 100%;
-    padding: 2%;
+@media (min-width:1000px){
+    .container {
+        background-image: url("https://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2020/02/departments/explore/chasing-storms-supercell-farm-elevator.adapt.1900.1.jpg");
+        background-size: cover;
+        width: 100%;
+        padding: 2%;
    }
+}
+@media (max-width:999px){
+    .container {
+        background-image: url("imgs/storm2.jpg");
+        background-size: cover;
+        width: 100%;
+    }    
+    #currCity {
+    padding-left: 4%;
+}    
+   
+}
 
 body {
     margin: 0;
@@ -21,7 +34,7 @@ h4 {
     padding-left: 10%;
 }
 .card {
-    opacity: .6;
+    opacity: .7;
     margin: 10%;
     padding: 0;
 }
@@ -29,8 +42,6 @@ h4 {
 .card-header {
     font-family: 'Metal Mania', cursive;
     background-color: lightgray;
-    font-weight: bolder;
-    font-size: 1.3em;
 }
 li {
     font-family: 'Metal Mania', cursive;
@@ -43,11 +54,8 @@ li {
     padding: 0;
 }
 #cUV {
-    opacity: .3;
+    opacity: .7;
 }
 .collection {
     background: transparent;
-}
-.cityBtn {
-    opacity: 10;
 }
