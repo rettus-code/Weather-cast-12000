@@ -11,11 +11,8 @@ $(document).ready(function() {
       
     }
     var cityBox = $(".cityData");
-      https://rawgit.com/moment/moment/2.2.1/min/moment.min.js
-      //var userEntry = prompt("Enter zipcode or city name.");
-     // var now = weather("weather");
-      //var future = weather("forecast");
-      var count = 0;
+
+
       var cityStorage = [];
 //When input Button is clicked, new city button is added to page
       var srch = $("#srch")
@@ -25,12 +22,15 @@ $(document).ready(function() {
         console.log("click");
         userEntry = (srch.val());
         console.log(userEntry);
-        count++;
-        localStorage.setItem(("#" + count), userEntry)
+        keys = Object.keys(localStorage);
+        c = keys.length;
+        c++;
+        localStorage.setItem(("#" + c), userEntry)
 
     
     var now = weather("weather");
     var future = weather("forecast");
+    
     })
     previousSearch();
     
@@ -73,7 +73,7 @@ $(document).ready(function() {
     }
      function uvIndex(state) {
       if (state === "weather"){
-        queryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=209f024f18b94911ca5d243388fea797&lat=" + wData.lat + "&lon="+wData.long;
+        queryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=209f024f18b94911ca5d243388fea797&lat=" + wData.lat + "&lon="+wData.long;
         $.ajax({
           url: queryURL,
           method: "GET"
@@ -104,12 +104,13 @@ $(document).ready(function() {
 }
 function previousSearch(){
   console.log("previous")
+
   var values = [],
         keys = Object.keys(localStorage);
-        i = keys.length;
+        k = keys.length;
 
-    while ( i-- ) {
-        values.push( localStorage.getItem(keys[i]) );
+    while ( k-- ) {
+        values.push( localStorage.getItem(keys[k]) );
     }
     console.log(values)
     for (j=0; j<8; j++){

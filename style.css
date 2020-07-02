@@ -10,11 +10,17 @@
         background-image: url("imgs/storm2.jpg");
         background-size: cover;
         width: 100%;
+
     }    
     #currCity {
     padding-left: 4%;
 }    
-   
+    .card {
+        margin: 10%;
+    }  
+    body {
+        margin-left: 10%;
+    } 
 }
 
 body {
@@ -34,7 +40,6 @@ h4 {
 }
 .card {
     opacity: .7;
-    margin: 10%;
     padding: 0;
 }
 
