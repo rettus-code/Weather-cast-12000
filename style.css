@@ -1,6 +1,8 @@
 @media (min-width:1000px){
     .container {
         background-image: url("imgs/storm.jpg");
+        background-repeat: no-repeat;
+        background-size: 1300px 900px;
         width: 100%;
         padding: 2%;
    }
@@ -8,9 +10,7 @@
 @media (max-width:999px){
     .container {
         background-image: url("imgs/storm2.jpg");
-        background-size: cover;
-        width: 100%;
-
+        background-size: auto;
     }    
     #currCity {
     padding-left: 4%;
